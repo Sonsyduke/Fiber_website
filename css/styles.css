@@ -400,6 +400,7 @@ small {
 
 .person-portfolio-btn {
   color: var(--color-primary);
+  background-color: transparent;
   font-weight: 700;
   text-decoration: none;
   text-align: center;
@@ -414,6 +415,7 @@ small {
 .person-portfolio-btn:hover {
   color: var(--color-white);
   background-color: var(--color-primary);
+  cursor: pointer;
 }
 
 /* ====================================== END OF TESTIMONIALS ====================================== */
