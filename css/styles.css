@@ -154,6 +154,10 @@ body {
   margin-top: 1.5rem;
 }
 
+.sidebar {
+  display: none;
+}
+
 .navbar .links {
   width: 25%;
   display: flex;
@@ -487,6 +491,10 @@ footer {
     display: block;
   }
 
+  .hamburger-menu:hover {
+    cursor: pointer;
+  }
+
   /* End of Nav Section */
 
   /* Hero Section */
@@ -504,6 +512,46 @@ footer {
 }
 
 @media (max-width: 650px) {
+  .sidebar {
+    position: fixed;
+    right: 0;
+    background: var(--color-white);
+    width: 18rem;
+    z-index: 3;
+    box-shadow: 1rem 3rem 4rem rgba(199, 199, 199, 0.623);
+    height: 60vh;
+    padding-left: 2rem;
+    display: none;
+  }
+
+  .close {
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+  }
+
+  .sidebar-links {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    padding-top: 2rem;
+  }
+
+  .sidebar-link,
+  .sidebar-sign-in,
+  .sidebar-sign-up {
+    text-decoration: none;
+    color: var(--color-main-heaing);
+  }
+
+  .sidebar-sign-up {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 1rem 3rem;
+    border-radius: var(--border-radius);
+  }
+
   .sub-heading {
     width: 100%;
   }
