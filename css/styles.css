@@ -185,6 +185,10 @@ body {
   border-radius: var(--border-radius);
   margin-left: 0.7rem;
 }
+
+.hamburger-menu {
+  display: none;
+}
 /* ============================== END OF NAVBAR ============================== */
 
 /* ============================== HERO SECTION ============================== */
@@ -454,4 +458,110 @@ footer {
 .footer-link {
   color: var(--color-paragraph);
   text-decoration: none;
+}
+
+/* ====================================== MEDIA QUERIES ====================================== */
+
+@media (max-width: 1000px) {
+  .reviews {
+    display: none;
+  }
+
+  .navbar .links {
+    width: 35%;
+  }
+
+  .person {
+    height: 380px;
+  }
+}
+
+@media (max-width: 750px) {
+  .link,
+  .sign-in,
+  .sign-up {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+
+  /* End of Nav Section */
+
+  /* Hero Section */
+  main {
+    grid-template-columns: 100%;
+  }
+
+  .right {
+    grid-row: 1 / 2;
+  }
+
+  .about {
+    margin-top: 370px;
+  }
+}
+
+@media (max-width: 650px) {
+  .sub-heading {
+    width: 100%;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .portfolio {
+    grid-template-columns: 100%;
+    height: 600px;
+  }
+
+  .left-portfolio {
+    align-self: flex-start;
+  }
+
+  .right-portfolio {
+    align-self: flex-start;
+    justify-self: center;
+    border-radius: 5px 5px 0 0;
+    height: 100%;
+  }
+
+  .media-scroller {
+    grid-auto-flow: row;
+    grid-auto-columns: 100%;
+    grid-template-columns: 100%;
+
+    overflow-x: hidden;
+    overscroll-behavior-inline: none;
+  }
+
+  .snaps-inline {
+    scroll-snap-type: none;
+  }
+
+  .snaps-inline > * {
+    scroll-snap-align: none;
+  }
+
+  .person {
+    height: 230px;
+  }
+
+  .person:nth-child(4),
+  .person:nth-child(5),
+  .person:nth-child(6) {
+    display: none;
+  }
+
+  footer {
+    grid-template-columns: 100%;
+    gap: 3rem;
+  }
 }
