@@ -190,8 +190,8 @@ body {
   margin-left: 0.7rem;
 }
 
-.hamburger-menu {
-  display: none;
+img.hamburger-menu {
+  display: none !important;
 }
 /* ============================== END OF NAVBAR ============================== */
 
