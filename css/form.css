@@ -164,6 +164,54 @@ body {
 }
 
 .main-heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 3rem 0 2rem 0;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin: 1.2rem 0;
+}
+
+label {
+  margin-bottom: 0.8rem;
+  font-weight: 400;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 60%;
+  height: 30px;
+  border-radius: var(--border-radius);
+  border: 2px solid rgb(214, 214, 214);
+}
+
+.terms {
+  display: flex;
+  width: 60%;
+  margin: 2rem 0;
+}
+
+p {
+  font: 0.7rem;
+  color: var(--color-main-heaing);
+}
+
+button {
+  width: 62%;
+  padding: 0.8rem 0;
+  background-color: var(--color-primary);
+  border: none;
+  border-radius: var(--border-radius);
+  color: var(--color-white);
+  margin-bottom: 1rem;
+}
+
+p > a {
+  color: var(--color-primary);
 }
 
 /* ======================= RIGHT SIDE ======================= */
@@ -212,4 +260,27 @@ body {
 
 .circle:nth-child(1) {
   background-color: rgba(255, 255, 255, 1);
+}
+
+/* ======================= MEDIA QUERIES ======================= */
+
+@media (max-width: 650px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  button {
+    width: 100%;
+  }
+
+  .terms {
+    width: 100%;
+  }
+
+  .right {
+    display: none;
+  }
 }
